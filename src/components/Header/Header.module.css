@@ -1,28 +1,93 @@
+
 .header {
   display: flex;
+  min-height: 76px;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 40px;
-  background-color: #fff;
-  border-bottom: 1px solid #e5e7eb;
+  gap: 24px;
+  border-bottom: 1px solid #e5eaf3;
 }
 
 .logo {
-  color: #2563eb;
-  font-size: 24px;
-  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: #28364b;
+  text-decoration: none;
+}
+
+.logo-icon {
+  display: flex;
+  width: 42px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-5deg);
+  border-radius: 13px;
+  background: #6479e9;
+  box-shadow: 0 5px 12px rgb(100 121 233 / 20%);
+  color: #fff;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.logo-name {
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: -0.7px;
+}
+
+.logo-name span {
+  color: #6479e9;
 }
 
 .navigation {
   display: flex;
-  gap: 24px;
+  align-items: center;
+  gap: 28px;
 }
 
-.navigation a {
-  color: #374151;
+.nav-link {
+  color: #758198;
+  font-size: 13px;
+  font-weight: 600;
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
-.navigation a:hover {
-  color: #2563eb;
+.nav-link:hover {
+  color: #6479e9;
+}
+
+.workspace-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #758198;
+  font-size: 13px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #55bd91;
+}
+
+@media (width <= 600px) {
+  .header {
+    flex-wrap: wrap;
+    gap: 14px;
+    padding: 14px 0;
+  }
+
+  .navigation {
+    order: 3;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .workspace-label {
+    font-size: 11px;
+  }
 }
