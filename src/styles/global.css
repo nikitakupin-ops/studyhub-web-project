@@ -1,1 +1,40 @@
-/* Styles for this component */
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  color: #28364b;
+  background: #f5f7fc;
+  font-synthesis: none;
+  text-rendering: optimizelegibility;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background: #f5f7fc;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus-visible,
+input:focus-visible,
+a:focus-visible {
+  outline: 3px solid #a5b8ff;
+  outline-offset: 3px;
+}
+
+::selection {
+  background: #dce5ff;
+  color: #28364b;
+}

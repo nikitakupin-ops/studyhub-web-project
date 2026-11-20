@@ -1,1 +1,58 @@
-/* Styles for this component */
+
+.card {
+  min-width: 0;
+  padding: 23px;
+  border: 1px solid #e7ebf3;
+  border-radius: 19px;
+  background: #fff;
+  box-shadow: 0 7px 24px rgb(52 69 105 / 5%);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 21px;
+}
+
+.card-header h2 {
+  margin: 0;
+  color: #303d54;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.count {
+  display: flex;
+  min-width: 29px;
+  height: 29px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8px;
+  border-radius: 10px;
+  background: #eef0ff;
+  color: #6479e9;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.deadlines {
+  background: #fffdf6;
+}
+
+.completed {
+  background: #f7fcf9;
+}
+
+@media (width <= 600px) {
+  .card {
+    padding: 19px;
+  }
+}
